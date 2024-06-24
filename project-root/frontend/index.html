@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Room Allocation Application</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Room Allocation Application</h1>
+    </header>
+    <main>
+        <div class="upload-section">
+            <h2>Upload CSV Files</h2>
+            <input type="file" id="groupFile" accept=".csv">
+            <input type="file" id="hostelFile" accept=".csv">
+            <button onclick="uploadFiles()">Upload</button>
+        </div>
+        <div id="allocation-results">
+            <!-- Display allocated rooms and group members here -->
+        </div>
+        <div class="download-section">
+            <h2>Download Allocation Details</h2>
+            <button onclick="downloadDetails()">Download CSV</button>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+
+</html>
